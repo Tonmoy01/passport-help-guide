@@ -331,7 +331,6 @@ body {
   padding: 4rem 1rem;
 }
 
-
 .divider {
   border: none;
   border-top: 1px solid var(--clr-border);
@@ -987,6 +986,62 @@ body {
   position: relative;
 }
 
+.nav-item .nav-sub-item {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: var(--clr-surface);
+  border: 1px solid var(--clr-border);
+  border-radius: 8px;
+  padding: 8px 0;
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  box-shadow:
+    0 20px 25px -5px rgb(0 0 0 / 0.1),
+    0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
+.nav-item .nav-sub-item button {
+  border: 0;
+  background: none;
+  padding: 12px;
+  border-top: 1px solid var(--clr-border);
+  text-align: start;
+  color: var(--clr-primary);
+  font-weight: var(--font-weight-semibold);
+}
+
+.nav-item .nav-sub-item button:hover {
+  padding: 12px 12px;
+  color: var(--color-blue-500);
+  background: var(--color-blue-50);
+  cursor: pointer;
+}
+
+.nav-item .nav-sub-item ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 300px;
+}
+
+.nav-item .nav-sub-item ul li {
+  padding: 12px 12px;
+  font-size: var(--text-sm);
+}
+
+.nav-item .nav-sub-item ul li:hover {
+  padding: 12px 12px;
+  color: var(--color-blue-500);
+  background: var(--color-blue-50);
+  cursor: pointer;
+}
+
+.nav-item:hover .nav-sub-item {
+  display: flex;
+}
+
 .nav-link {
   display: flex;
   align-items: center;
@@ -1037,7 +1092,6 @@ body {
   color: var(--clr-text-muted);
 }
 
-
 /* ============================================================
    11. HERO SECTION
    ============================================================ */
@@ -1051,7 +1105,6 @@ body {
   );
   padding: 4rem 1rem;
 }
-
 
 .passport-hero__container {
   max-width: var(--container-7xl);
@@ -1071,7 +1124,6 @@ body {
   margin-bottom: 1.5rem;
   line-height: 1.25;
 }
-
 
 .hero-infobox {
   background: var(--clr-surface);
@@ -1116,7 +1168,6 @@ body {
   font-size: var(--text-sm);
 }
 
-
 .hero-infobox__stat-label {
   font-weight: var(--font-weight-semibold);
   color: var(--clr-text-base);
@@ -1133,7 +1184,6 @@ body {
   max-width: var(--container-3xl);
   margin: 0 auto;
 }
-
 
 .hero-stat-card {
   background: var(--clr-surface);
@@ -2870,7 +2920,6 @@ body {
   padding: 1rem 1rem;
 }
 
-
 .breadcrumb {
   display: flex;
   align-items: center;
@@ -2903,4 +2952,3 @@ body {
   color: #111827;
   font-weight: 500;
 }
-
