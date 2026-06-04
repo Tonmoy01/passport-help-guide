@@ -39,6 +39,12 @@
   }
 }
 
+@media (min-width: 1024px) {
+  .mobile-nav-panel {
+    display: none !important;
+  }
+}
+
 @media (min-width: 640px) {
   .passport-hero {
     padding-left: 1.5rem;

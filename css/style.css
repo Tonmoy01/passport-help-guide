@@ -1091,6 +1091,78 @@ body {
   color: var(--clr-text-muted);
 }
 
+.mobile-nav-panel {
+  display: none;
+  border-top: 1px solid var(--clr-border);
+  background: var(--clr-surface);
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.mobile-nav-panel.is-open {
+  display: block;
+}
+
+/* ── Panel inner list ── */
+.mobile-nav-list {
+  display: flex;
+  flex-direction: column;
+  padding: 4px 0;
+}
+
+/* ── Each section ── */
+.mobile-nav-group {
+  border-bottom: 1px solid var(--clr-border);
+  padding-bottom: 6px;
+  margin-bottom: 4px;
+}
+
+.mobile-nav-group:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.mobile-nav-group__title {
+  padding: 10px 16px 6px;
+  font-size: var(--text-sm);
+  font-weight: var(--font-weight-semibold);
+  color: var(--clr-text-base);
+  letter-spacing: 0.02em;
+}
+
+.mobile-nav-group__links {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Each link ── */
+.mobile-nav-link {
+  display: block;
+  text-decoration: none;
+  padding: 9px 28px;
+  font-size: var(--text-sm);
+  color: var(--clr-text-body);
+  transition:
+    background 0.12s ease,
+    color 0.12s ease;
+}
+
+.mobile-nav-link:hover {
+  background: var(--color-blue-50);
+  color: var(--color-blue-500);
+}
+
+/* ── "View All" featured link ── */
+.mobile-nav-link--featured {
+  color: var(--clr-primary);
+  font-weight: var(--font-weight-semibold);
+}
+
+.mobile-nav-link--featured:hover {
+  background: var(--color-blue-50);
+  color: var(--color-blue-500);
+}
+
 /* ============================================================
    11. HERO SECTION
    ============================================================ */
@@ -2918,6 +2990,9 @@ body {
   background-color: var(--clr-primary);
 }
 
+/* ============================================================
+   27. BREADCRUMB BAR
+   ============================================================ */
 .breadcrumb-bar {
   background-color: #f9fafb;
   border-bottom: 1px solid #e5e7eb;

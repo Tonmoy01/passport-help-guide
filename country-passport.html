@@ -6,6 +6,8 @@
     <title>Country Passport Info</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/breakpoints.css" />
+    <script src="js/nav.js" defer></script>
+    <script src="js/demo-nav.js" defer></script>
   </head>
   <body>
     <header class="header">
@@ -25,18 +27,18 @@
               stroke-linejoin="round"
               class="logo-icon"
             >
-              <path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"></path>
-              <path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"></path>
-              <path d="M7 21h10"></path>
-              <path d="M12 3v18"></path>
-              <path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"></path>
+              <path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z" />
+              <path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z" />
+              <path d="M7 21h10" />
+              <path d="M12 3v18" />
+              <path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2" />
             </svg>
-
             <span class="logo-text">USPASSPORTHELPGUIDE.COM</span>
           </div>
 
           <!-- Navigation Menu -->
           <div class="nav-menu">
+            <!-- Passport -->
             <div class="nav-item">
               <button class="nav-link">
                 Passport
@@ -50,11 +52,22 @@
                   stroke-linejoin="round"
                   class="nav-arrow"
                 >
-                  <path d="m6 9 6 6 6-6"></path>
+                  <path d="m6 9 6 6 6-6" />
                 </svg>
               </button>
+              <div class="nav-sub-item">
+                <ul>
+                  <li>New Passport</li>
+                  <li>Passport Renewal</li>
+                  <li>Child Passport</li>
+                  <li>Name Change</li>
+                  <li>Expedited Passport</li>
+                  <li>Passport Photos</li>
+                </ul>
+              </div>
             </div>
 
+            <!-- Visa -->
             <div class="nav-item">
               <button class="nav-link">
                 Visa
@@ -68,11 +81,27 @@
                   stroke-linejoin="round"
                   class="nav-arrow"
                 >
-                  <path d="m6 9 6 6 6-6"></path>
+                  <path d="m6 9 6 6 6-6" />
                 </svg>
               </button>
+              <div class="nav-sub-item">
+                <ul>
+                  <li>United States</li>
+                  <li>United Kingdom</li>
+                  <li>Canada</li>
+                  <li>Australia</li>
+                  <li>Germany</li>
+                  <li>France</li>
+                  <li>Japan</li>
+                  <li>China</li>
+                  <li>India</li>
+                  <li>United Arab Emirates</li>
+                </ul>
+                <button>View All Countries</button>
+              </div>
             </div>
 
+            <!-- Resources -->
             <div class="nav-item">
               <button class="nav-link">
                 Resources
@@ -86,11 +115,21 @@
                   stroke-linejoin="round"
                   class="nav-arrow"
                 >
-                  <path d="m6 9 6 6 6-6"></path>
+                  <path d="m6 9 6 6 6-6" />
                 </svg>
               </button>
+              <div class="nav-sub-item">
+                <ul>
+                  <li>Regional Passport Agency</li>
+                  <li>Passport Fees</li>
+                  <li>Visa on Arrival</li>
+                  <li>Expedited Visa Services</li>
+                  <li>Passport &amp; Visa FAQ</li>
+                </ul>
+              </div>
             </div>
 
+            <!-- By State -->
             <div class="nav-item">
               <button class="nav-link">
                 By State
@@ -104,11 +143,22 @@
                   stroke-linejoin="round"
                   class="nav-arrow"
                 >
-                  <path d="m6 9 6 6 6-6"></path>
+                  <path d="m6 9 6 6 6-6" />
                 </svg>
               </button>
+              <div class="nav-sub-item">
+                <ul>
+                  <li>Alabama</li>
+                  <li>Alaska</li>
+                  <li>Arizona</li>
+                  <li>Arkansas</li>
+                  <li>California</li>
+                </ul>
+                <button>View All 50 States</button>
+              </div>
             </div>
 
+            <!-- About -->
             <div class="nav-item">
               <button class="nav-link">
                 About
@@ -122,11 +172,20 @@
                   stroke-linejoin="round"
                   class="nav-arrow"
                 >
-                  <path d="m6 9 6 6 6-6"></path>
+                  <path d="m6 9 6 6 6-6" />
                 </svg>
               </button>
+              <div class="nav-sub-item">
+                <ul>
+                  <li>About Us</li>
+                  <li>FAQ</li>
+                  <li>Contact</li>
+                  <li>Disclaimer</li>
+                </ul>
+              </div>
             </div>
           </div>
+          <!-- /nav-menu -->
 
           <!-- Action Buttons -->
           <div class="nav-actions">
@@ -134,7 +193,13 @@
           </div>
 
           <!-- Mobile Menu Button -->
-          <button class="mobile-menu-btn">
+          <button
+            class="mobile-menu-btn"
+            id="hamburgerBtn"
+            aria-label="Toggle menu"
+            aria-expanded="false"
+            aria-controls="mobileNavPanel"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -145,13 +210,115 @@
               stroke-linejoin="round"
               class="menu-icon"
             >
-              <line x1="4" x2="20" y1="12" y2="12"></line>
-              <line x1="4" x2="20" y1="6" y2="6"></line>
-              <line x1="4" x2="20" y1="18" y2="18"></line>
+              <line x1="4" x2="20" y1="12" y2="12" />
+              <line x1="4" x2="20" y1="6" y2="6" />
+              <line x1="4" x2="20" y1="18" y2="18" />
             </svg>
           </button>
         </div>
+        <!-- /navbar-container -->
       </nav>
+
+      <!-- ══════════════════════════════════
+       MOBILE NAV PANEL
+  ══════════════════════════════════ -->
+      <div class="mobile-nav-panel" id="mobileNavPanel">
+        <div class="mobile-nav-list">
+          <!-- Passport -->
+          <div class="mobile-nav-group">
+            <div class="mobile-nav-group__title">Passport</div>
+            <div class="mobile-nav-group__links">
+              <a href="#new-passport" class="mobile-nav-link">New Passport</a>
+              <a href="#passport-renewal" class="mobile-nav-link"
+                >Passport Renewal</a
+              >
+              <a href="#child-passport" class="mobile-nav-link"
+                >Child Passport</a
+              >
+              <a href="#name-change" class="mobile-nav-link">Name Change</a>
+              <a href="#expedited-passport" class="mobile-nav-link"
+                >Expedited Passport</a
+              >
+              <a href="#passport-photos" class="mobile-nav-link"
+                >Passport Photos</a
+              >
+            </div>
+          </div>
+
+          <!-- Visa -->
+          <div class="mobile-nav-group">
+            <div class="mobile-nav-group__title">Visa</div>
+            <div class="mobile-nav-group__links">
+              <a href="#visa-us" class="mobile-nav-link">United States</a>
+              <a href="#visa-uk" class="mobile-nav-link">United Kingdom</a>
+              <a href="#visa-ca" class="mobile-nav-link">Canada</a>
+              <a href="#visa-au" class="mobile-nav-link">Australia</a>
+              <a href="#visa-de" class="mobile-nav-link">Germany</a>
+              <a href="#visa-fr" class="mobile-nav-link">France</a>
+              <a href="#visa-jp" class="mobile-nav-link">Japan</a>
+              <a href="#visa-cn" class="mobile-nav-link">China</a>
+              <a href="#visa-in" class="mobile-nav-link">India</a>
+              <a href="#visa-ae" class="mobile-nav-link"
+                >United Arab Emirates</a
+              >
+              <a
+                href="#all-visas"
+                class="mobile-nav-link mobile-nav-link--featured"
+                >View All Countries</a
+              >
+            </div>
+          </div>
+
+          <!-- Resources -->
+          <div class="mobile-nav-group">
+            <div class="mobile-nav-group__title">Resources</div>
+            <div class="mobile-nav-group__links">
+              <a href="#regional-agency" class="mobile-nav-link"
+                >Regional Passport Agency</a
+              >
+              <a href="#passport-fees" class="mobile-nav-link">Passport Fees</a>
+              <a href="#visa-on-arrival" class="mobile-nav-link"
+                >Visa on Arrival</a
+              >
+              <a href="#expedited-visa" class="mobile-nav-link"
+                >Expedited Visa Services</a
+              >
+              <a href="#passport-visa-faq" class="mobile-nav-link"
+                >Passport &amp; Visa FAQ</a
+              >
+            </div>
+          </div>
+
+          <!-- By State -->
+          <div class="mobile-nav-group">
+            <div class="mobile-nav-group__title">By State</div>
+            <div class="mobile-nav-group__links">
+              <a href="#al" class="mobile-nav-link">Alabama</a>
+              <a href="#ak" class="mobile-nav-link">Alaska</a>
+              <a href="#az" class="mobile-nav-link">Arizona</a>
+              <a href="#ar" class="mobile-nav-link">Arkansas</a>
+              <a href="#ca" class="mobile-nav-link">California</a>
+              <a
+                href="#states"
+                class="mobile-nav-link mobile-nav-link--featured"
+                >View All 50 States</a
+              >
+            </div>
+          </div>
+
+          <!-- About -->
+          <div class="mobile-nav-group">
+            <div class="mobile-nav-group__title">About</div>
+            <div class="mobile-nav-group__links">
+              <a href="#about" class="mobile-nav-link">About Us</a>
+              <a href="#faq" class="mobile-nav-link">FAQ</a>
+              <a href="#contact" class="mobile-nav-link">Contact</a>
+              <a href="#disclaimer" class="mobile-nav-link">Disclaimer</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /mobile-nav-panel -->
     </header>
 
     <!-- ! Back Bar -->
@@ -2839,7 +3006,7 @@
     <!-- ! Demo Nav -->
     <div class="demo-nav">
       <div class="demo-nav__title">Demo Navigation:</div>
-      <div class="demo-nav__grid">
+      <div class="demo-nav__grid" id="demoNavGrid">
         <button class="demo-nav__btn">Home</button>
         <button class="demo-nav__btn">Passport</button>
         <button class="demo-nav__btn">FAQ</button>
@@ -2848,14 +3015,12 @@
         <button class="demo-nav__btn">Article</button>
         <button class="demo-nav__btn">States</button>
         <button class="demo-nav__btn">State Passport</button>
-        <button class="demo-nav__btn" href="/country-passport.html">
-          <a href="/country-passport.html" class="demo-nav__link">
-            County Passport
-          </a>
+        <button class="demo-nav__btn" data-href="/country-passport.html">
+          County Passport
         </button>
         <button class="demo-nav__btn">Office Detail</button>
-        <button class="demo-nav__btn demo-nav__btn--active" href="/index.html">
-          <a href="/index.html" class="demo-nav__link"> Passport Office </a>
+        <button class="demo-nav__btn" data-href="/index.html">
+          Passport Office
         </button>
         <button class="demo-nav__btn">Content + Sidebar</button>
         <button class="demo-nav__btn">ETIAS</button>
