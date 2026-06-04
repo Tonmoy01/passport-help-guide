@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/breakpoints.css" />
     <script src="js/nav.js" defer></script>
-    <script src="js/demo-nav.js" defer></script>
   </head>
   <body>
     <header class="header">
@@ -56,14 +55,24 @@
                 </svg>
               </button>
               <div class="nav-sub-item">
-                <ul>
-                  <li>New Passport</li>
-                  <li>Passport Renewal</li>
-                  <li>Child Passport</li>
-                  <li>Name Change</li>
-                  <li>Expedited Passport</li>
-                  <li>Passport Photos</li>
-                </ul>
+                <a href="#new-passport" class="nav-sub-item__link"
+                  >New Passport</a
+                >
+                <a href="#passport-renewal" class="nav-sub-item__link"
+                  >Passport Renewal</a
+                >
+                <a href="#child-passport" class="nav-sub-item__link"
+                  >Child Passport</a
+                >
+                <a href="#name-change" class="nav-sub-item__link"
+                  >Name Change</a
+                >
+                <a href="#expedited-passport" class="nav-sub-item__link"
+                  >Expedited Passport</a
+                >
+                <a href="#passport-photos" class="nav-sub-item__link"
+                  >Passport Photos</a
+                >
               </div>
             </div>
 
@@ -85,19 +94,25 @@
                 </svg>
               </button>
               <div class="nav-sub-item">
-                <ul>
-                  <li>United States</li>
-                  <li>United Kingdom</li>
-                  <li>Canada</li>
-                  <li>Australia</li>
-                  <li>Germany</li>
-                  <li>France</li>
-                  <li>Japan</li>
-                  <li>China</li>
-                  <li>India</li>
-                  <li>United Arab Emirates</li>
-                </ul>
-                <button>View All Countries</button>
+                <a href="#united-states" class="nav-sub-item__link"
+                  >United States</a
+                >
+                <a href="#united-kingdom" class="nav-sub-item__link"
+                  >United Kingdom</a
+                >
+                <a href="#canada" class="nav-sub-item__link">Canada</a>
+                <a href="#australia" class="nav-sub-item__link">Australia</a>
+                <a href="#germany" class="nav-sub-item__link">Germany</a>
+                <a href="#france" class="nav-sub-item__link">France</a>
+                <a href="#japan" class="nav-sub-item__link">Japan</a>
+                <a href="#china" class="nav-sub-item__link">China</a>
+                <a href="#india" class="nav-sub-item__link">India</a>
+                <a href="#united-arab-emirates" class="nav-sub-item__link"
+                  >United Arab Emirates</a
+                >
+                <a href="#all-countries" class="nav-sub-item__view-all"
+                  >View All Countries</a
+                >
               </div>
             </div>
 
@@ -119,13 +134,21 @@
                 </svg>
               </button>
               <div class="nav-sub-item">
-                <ul>
-                  <li>Regional Passport Agency</li>
-                  <li>Passport Fees</li>
-                  <li>Visa on Arrival</li>
-                  <li>Expedited Visa Services</li>
-                  <li>Passport &amp; Visa FAQ</li>
-                </ul>
+                <a href="#regional-agency" class="nav-sub-item__link"
+                  >Regional Passport Agency</a
+                >
+                <a href="#passport-fees" class="nav-sub-item__link"
+                  >Passport Fees</a
+                >
+                <a href="#visa-on-arrival" class="nav-sub-item__link"
+                  >Visa on Arrival</a
+                >
+                <a href="#expedited-visa" class="nav-sub-item__link"
+                  >Expedited Visa Services</a
+                >
+                <a href="#passport-faq" class="nav-sub-item__link"
+                  >Passport &amp; Visa FAQ</a
+                >
               </div>
             </div>
 
@@ -147,14 +170,14 @@
                 </svg>
               </button>
               <div class="nav-sub-item">
-                <ul>
-                  <li>Alabama</li>
-                  <li>Alaska</li>
-                  <li>Arizona</li>
-                  <li>Arkansas</li>
-                  <li>California</li>
-                </ul>
-                <button>View All 50 States</button>
+                <a href="#al" class="nav-sub-item__link">Alabama</a>
+                <a href="#ak" class="nav-sub-item__link">Alaska</a>
+                <a href="#az" class="nav-sub-item__link">Arizona</a>
+                <a href="#ar" class="nav-sub-item__link">Arkansas</a>
+                <a href="#ca" class="nav-sub-item__link">California</a>
+                <a href="#states" class="nav-sub-item__view-all"
+                  >View All 50 States</a
+                >
               </div>
             </div>
 
@@ -176,12 +199,10 @@
                 </svg>
               </button>
               <div class="nav-sub-item">
-                <ul>
-                  <li>About Us</li>
-                  <li>FAQ</li>
-                  <li>Contact</li>
-                  <li>Disclaimer</li>
-                </ul>
+                <a href="#about-us" class="nav-sub-item__link">About Us</a>
+                <a href="#faq" class="nav-sub-item__link">FAQ</a>
+                <a href="#contact" class="nav-sub-item__link">Contact</a>
+                <a href="#disclaimer" class="nav-sub-item__link">Disclaimer</a>
               </div>
             </div>
           </div>
@@ -221,6 +242,7 @@
 
       <!-- ══════════════════════════════════
        MOBILE NAV PANEL
+       header এর ভেতরে, navbar এর নিচে
   ══════════════════════════════════ -->
       <div class="mobile-nav-panel" id="mobileNavPanel">
         <div class="mobile-nav-list">
@@ -3000,38 +3022,6 @@
             </p>
           </div>
         </div>
-      </div>
-    </div>
-
-    <!-- ! Demo Nav -->
-    <div class="demo-nav">
-      <div class="demo-nav__title">Demo Navigation:</div>
-      <div class="demo-nav__grid" id="demoNavGrid">
-        <button class="demo-nav__btn">Home</button>
-        <button class="demo-nav__btn">Passport</button>
-        <button class="demo-nav__btn">FAQ</button>
-        <button class="demo-nav__btn">FAQ Cat</button>
-        <button class="demo-nav__btn">Blog Index</button>
-        <button class="demo-nav__btn">Article</button>
-        <button class="demo-nav__btn">States</button>
-        <button class="demo-nav__btn">State Passport</button>
-        <button class="demo-nav__btn" data-href="/country-passport.html">
-          County Passport
-        </button>
-        <button class="demo-nav__btn">Office Detail</button>
-        <button class="demo-nav__btn" data-href="/index.html">
-          Passport Office
-        </button>
-        <button class="demo-nav__btn">Content + Sidebar</button>
-        <button class="demo-nav__btn">ETIAS</button>
-        <button class="demo-nav__btn">Visa &amp; Travel</button>
-        <button class="demo-nav__btn">Study Abroad</button>
-        <button class="demo-nav__btn">Regional Agency</button>
-        <button class="demo-nav__btn">404 Error</button>
-        <button class="demo-nav__btn">China Visa</button>
-        <button class="demo-nav__btn">Harvard Study</button>
-        <button class="demo-nav__btn">Expeditors</button>
-        <button class="demo-nav__btn">NPS Detail</button>
       </div>
     </div>
 
